@@ -1,14 +1,53 @@
-# Smart Recycling Front End
+# Smart Recycling API Docs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Recycling API is built using Express.js and MySQL. Below is the documentation for the available endpoints.
 
-## Stack
+[Full documentation right here](https://documenter.getpostman.com/view/18031605/2s9Ykn82CC)
 
-- Tailwindcss
-- Ant Design
-- Flowbite
+## Installation
 
-Currently, two official plugins are available:
+> Install the required dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> > npm i
+
+> > yarn install
+
+> > pnpm install
+
+---
+
+## Usage
+
+Test the API using [`POSTMAN`](https://www.postman.com/) or any other API testing tool.
+
+> [**IMPORT FIRST TO SEE ENDPOINTS**](/Smart%20Recycling%20New%20API.postman_collection.json)
+
+## Table of Endpoints
+
+| No. | Endpoints                         | Method |
+| --- | --------------------------------- | ------ |
+| 1   | /api/signup                       | POST   |
+| 2   | /api/signin                       | POST   |
+| 3   | /api/user                         | GET    |
+| 4   | /api/users [admin]                | GET    |
+| 5   | /api/user/points                  | POST   |
+| 6   | /api/user/change-role             | GET    |
+| 7   | /api/reports                      | GET    |
+| 8   | /api/reports                      | POST   |
+| 9   | /api/events                       | GET    |
+| 10  | /api/events                       | POST   |
+| 11  | /api/events/:id                   | PUT    |
+| 12  | /api/exchange                     | POST   |
+| 12  | /api/exchange                     | POST   |
+| 13  | /api/exchange/:user_id            | POST   |
+| 14  | /api/payment-history/:user_id     | GET    |
+| 15  | /api/transaction-history/:user_id | GET    |
+| 16  | /api/payment-method               | POST   |
+| 17  | /api/transaction-payment          | POST   |
+| 18  | /api/items                        | GET    |
+| 19  | /api/items                        | POST   |
+| 20  | /api/items/:id                    | PUT    |
+
+Credit to [Jody Yuantoro](https://github.com/xyzuan) and [Syauqi](https://github.com/syauqiamiq)
+
+[MIT LICENSE](https://github.com/rizkyhaksono/smartrecycling-be/blob/main/LICENSE)
